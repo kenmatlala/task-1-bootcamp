@@ -38,6 +38,52 @@
             margin-bottom: 20px;
             background-color: #f0f0f0;
         }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .left-section {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .image {
+            max-width: 70%;
+            height: auto;
+        }
+        .right-section {
+            width: 50%;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: left;
+        }
+        .location {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .social-icons li:last-child {
+            margin-right: 0;
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+        }
     </style>
 </head>
 <body>
@@ -51,22 +97,18 @@
     </nav>
 
     
-    <header>
+    <a>
         <h1> <img src="./2.png" height="100px" alt="img"> </h1>
-    </header>
+    <a>
 
     
     <section id="home">
         <h2>Home</h2>
         <body>
-            <p><mark>marked</mark></p>
-            <p><del>DEleted</del></p>
-            <p><ins>inserted</ins></p>
-            <p><superscript>superscript</superscript></p>
-            <p><b>bold</b></p>
-            <p><i>italic</i></p>
-            <p><big>Big</big></p>
-            <p><small>small</small></p>
+            <video width="640" height="360" controls>
+                <source src="vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
 
             <br>
      
@@ -74,68 +116,46 @@
     </section>
 
     <section id="about">
-        <h2>About</h2>
-                <h4> Unordered list</h4>
-        <ul>
-            <li> item1 </li>
-            <li> item1 </li>
-            <li> item1 </li>
-            <li> item1 </li>
-        </ul>
+        <div class="container">
 
-        <h4> ordered list</h4>
-        <ol>
-            <li> item1 </li>
-            <li> item1 </li>
-            <li> item1 </li>
-            <li> item1 </li>
-        </ol>
+            <div class="left-section">
+                <img src="mee.png" alt="Your Image" class="image">
+            </div>
 
+            <div class="right-section">
 
-        <h4> description list</h4>
-        <dl>
-            <dt>HTML</dt>
-            <dd> this is the discription </dd>
+                <h1>About Me</h1>
+                <p>
+                    I have a natural inclination for problem-solving and find the
+                    most joy when facing challenges. In addition to my passion for
+                    farming and selling trees as a hobby, I have also ventured into
+                    the field of software development. Throughout my life, I have
+                    been actively involved in various business endeavors, assisting
+                    numerous enterprises in their growth. Additionally, I've had the
+                    opportunity to contribute to the development of products
+                    available on the Play Store upon request
+                </p>
+                
+                <ul class="social-icons">
+                    <li><a href="https://web.facebook.com/kopano.matlala">Facebook</a></li>
+                    <li><a href="https://twitter.com/Kopzido">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/kopanoelnkitsengmatlala/">Insta</a></li>
+                </ul>
 
-            <dt>CSS</dt>
-            <dd> this is the discription </dd>
-
-            <dt>JAVA</dt>
-            <dd> this is the discription </dd>
-        </dl>
-        
+            </div>
+        </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Us</h2>
-        <h4> Tables </h4>
-<table>
-    <tr>
-        <th> Birth Day </th>
-        <th> Name </th>
-        <th> Last Name </th>
-        <th> Address </th>
-        <th> Age </th>
-    </tr>
-
-    <tr>
-        <td> 27 Sep 1992 </td>
-        <td> Kopano </td>
-        <td> Matlala </td>
-        <td> Hekpoort 1790 </td>
-        <td> 31 </td>
-        
-    </tr>
-
-    <tr>
-        <td> 19 Jul 2003 </td>
-        <td> Nolo </td>
-        <td> Matlala </td>
-        <td> Hekpoort 1790 </td>
-        <td> 21 </td>
-        
-    </tr>
-</table>
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <p>kopanoel.com</p>
+            <p>Phone: +27 72-164-6797</p>
+            <p>Address: Gauteng, South Sfrica</p>
+        </div>
+        <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.744264753927!2d28.0436316149545!3d-26.26979848338423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950d9e066ef84d%3A0xf6b7f97e716b720!2sGauteng%2C%20South%20Africa!5e0!3m2!1sen!2s!4v1649249177920!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    
     </section>
 </body>
 </html>
