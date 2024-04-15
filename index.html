@@ -4,88 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Website</title>
-    <style>
-        
-        nav {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        /* Basic styling for sections */
-        section {
-            padding: 20px;
-            margin-bottom: 20px;
-            background-color: #f0f0f0;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-
-        .left-section {
-            width: 50%;
-            padding: 20px;
-        }
-
-        .image {
-            max-width: 70%;
-            height: auto;
-        }
-        .right-section {
-            width: 50%;
-            padding: 20px;
-            background-color: #f4f4f4;
-            text-align: left;
-        }
-        .location {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-        }
-        .social-icons {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .social-icons li {
-            display: inline-block;
-            margin-right: 10px;
-        }
-        .social-icons li:last-child {
-            margin-right: 0;
-        }
-        .social-icons a {
-            text-decoration: none;
-            color: #333;
-            font-size: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
 </head>
+
 <body>
     <!-- Navigation bar -->
     <nav>
@@ -95,67 +17,70 @@
             <li><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
+    <div class="container">
+        <section id="home">
+            <h1 id="home-heading"> My Favourite Shows </h1>
+            <h4 id="home-underheading"> click anywhere drag and pull to see more </h4>
+            
+        
+            <div id="image-track" data.mouse-down-at="0" data-prev-percentage="0">
+                <img class="image" src="./img/1.jpg" draggable="false" alt="img" />
+                <img class="image" src="./img/2.jpg" draggable="false" alt="img" />
+                <img class="image" src="./img/3.jpg" draggable="false" alt="img" />
+                <img class="image" src="./img/4.jpg" draggable="false" alt="img" />
+                <img class="image" src="./img/5.png" draggable="false" alt="img" />
+                <img class="image" src="./img/6.jpg" draggable="false" alt="img" />
+                <img class="image" src="./img/7.png" draggable="false" alt="img" />
+                <img class="image" src="./img/8.png" draggable="false" alt="img" />
+                <img class="image" src="./img/9.png" draggable="false" alt="img" />
+                <img class="image" src="./img/10.jpg" draggable="false" alt="img" />
+            </div> 
+            
+        </section>
 
-    
-    <a>
-        <h1> <img src="./2.png" height="100px" alt="img"> </h1>
-    <a>
+        <section id="about">
+            <div class="container-profile">
 
-    
-    <section id="home">
-        <h2>Home</h2>
-        <body>
-            <video width="640" height="360" controls>
-                <source src="vid.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+                <div class="left-section">
+                    <img src="mee.png" alt="Your Image" class="image-profile">
+                </div>
 
-            <br>
-     
-            <a href="mailto:gmail.com"> emails </a>
-    </section>
+                <div class="right-section">
 
-    <section id="about">
-        <div class="container">
+                    <h1>About Me</h1>
+                    <p>
+                        I have a natural inclination for problem-solving and find the
+                        most joy when facing challenges. In addition to my passion for
+                        farming and selling trees as a hobby, I have also ventured into
+                        the field of software development. Throughout my life, I have
+                        been actively involved in various business endeavors, assisting
+                        numerous enterprises in their growth. Additionally, I've had the
+                        opportunity to contribute to the development of products
+                        available on the Play Store upon request
+                    </p>
+                    
+                    <ul class="social-icons">
+                        <li><a href="https://web.facebook.com/kopano.matlala"><i class="ri-facebook-fill"></i></a></li>
+                        <li><a href="https://twitter.com/Kopzido"><i class="ri-twitter-fill"></i></a></li>
+                        <li><a href="https://www.instagram.com/kopanoelnkitsengmatlala/"><i class="ri-instagram-fill"></i></a></li>
+                    </ul>
 
-            <div class="left-section">
-                <img src="mee.png" alt="Your Image" class="image">
+                </div>
             </div>
+        </section>
 
-            <div class="right-section">
-
-                <h1>About Me</h1>
-                <p>
-                    I have a natural inclination for problem-solving and find the
-                    most joy when facing challenges. In addition to my passion for
-                    farming and selling trees as a hobby, I have also ventured into
-                    the field of software development. Throughout my life, I have
-                    been actively involved in various business endeavors, assisting
-                    numerous enterprises in their growth. Additionally, I've had the
-                    opportunity to contribute to the development of products
-                    available on the Play Store upon request
-                </p>
-                
-                <ul class="social-icons">
-                    <li><a href="https://web.facebook.com/kopano.matlala">Facebook</a></li>
-                    <li><a href="https://twitter.com/Kopzido">Twitter</a></li>
-                    <li><a href="https://www.instagram.com/kopanoelnkitsengmatlala/">Insta</a></li>
-                </ul>
-
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <div class="contact-info">
+                <p>kopanoel.com</p>
+                <p>Phone: +27 72-164-6797</p>
+                <p>Address: Gauteng, South Sfrica</p>
             </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h1>Contact Us</h1>
-        <div class="contact-info">
-            <p>kopanoel.com</p>
-            <p>Phone: +27 72-164-6797</p>
-            <p>Address: Gauteng, South Sfrica</p>
-        </div>
-        <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.744264753927!2d28.0436316149545!3d-26.26979848338423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950d9e066ef84d%3A0xf6b7f97e716b720!2sGauteng%2C%20South%20Africa!5e0!3m2!1sen!2s!4v1649249177920!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    
-    </section>
+            <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.744264753927!2d28.0436316149545!3d-26.26979848338423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950d9e066ef84d%3A0xf6b7f97e716b720!2sGauteng%2C%20South%20Africa!5e0!3m2!1sen!2s!4v1649249177920!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
+        </section>
+    </div>
+    <script src="./main.js"></script>
 </body>
 </html>

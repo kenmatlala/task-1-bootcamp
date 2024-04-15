@@ -1,0 +1,126 @@
+/* nav section */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Basic styling for sections */
+.container {
+    overflow: hidden;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+.container-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.left-section {
+    width: 50%;
+    padding: 20px;
+}
+
+.image-profile {
+    max-width: 70%;
+    height: auto;
+}
+.right-section {
+    width: 50%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: left;
+}
+.location {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.social-icons li:last-child {
+    margin-right: 0;
+}
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+
+/* homestuff */
+#home {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+   
+}
+
+#image-track > .image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% 50%;
+    margin: 0 10px; /* Add spacing between images */
+   
+}
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* lef looks good but top doesnt */
+    transform: translate(0%, -50%);
+    user-select: none;
+    
+}
+
+#home-heading, #home-underheading {
+    text-align: center;
+}
+
+#home-hrading {
+    color: blue;
+}
+
+#home-underheading {
+    color: rgb(83, 0, 0);
+}
