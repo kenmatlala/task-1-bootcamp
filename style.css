@@ -116,8 +116,7 @@ section {
 }
 
 #home-heading, #home-underheading {
-    text-align: center;
-    display: flex;
+    text-align: center; 
 }
 
 #home-heading {
