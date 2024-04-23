@@ -57,7 +57,7 @@ section {
 .right-section {
     width: 50%;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
     text-align: left;
 }
 .location {
@@ -186,3 +186,60 @@ section {
     border: 2px solid #1f5297;
   }
   
+/*--------------------------------------------------------------
+# contact section
+--------------------------------------------------------------*/
+#contact-form {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#contact-form h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.invalid-input {
+    border: 1px solid red;
+}

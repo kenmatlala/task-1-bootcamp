@@ -42,110 +42,68 @@
 
         <section id="about">
             <div class="container-profile">
-
                 <div class="left-section">
-                    <img src="mee.png" alt="Your Image" class="image-profile">
+                    <img src="./mee.png" alt="Your Image" class="image-profile">
                 </div>
-
                 <div class="right-section">
-
                     <h1>About Me</h1>
-                    <p>
-                        I have a natural inclination for problem-solving and find the
-                        most joy when facing challenges. In addition to my passion for
-                        farming and selling trees as a hobby, I have also ventured into
-                        the field of software development. Throughout my life, I have
-                        been actively involved in various business endeavors, assisting
-                        numerous enterprises in their growth. Additionally, I've had the
-                        opportunity to contribute to the development of products
-                        available on the Play Store upon request
+                    <p id="about-content">
+                        <!-- About Me content will be dynamically added here -->
                     </p>
-                    
-                    <ul class="social-icons">
-                        <li><a href="https://web.facebook.com/kopano.matlala"><i class="ri-facebook-fill"></i></a></li>
-                        <li><a href="https://twitter.com/Kopzido"><i class="ri-twitter-fill"></i></a></li>
-                        <li><a href="https://www.instagram.com/kopanoelnkitsengmatlala/"><i class="ri-instagram-fill"></i></a></li>
+                    <ul class="social-icons" id="social-links">
+                        <!-- Social icons will be dynamically added here -->
                     </ul>
-
                 </div>
             </div>
         </section>
 
         <section id="resume" class="resume">
             <div class="resume-container">
-    
                 <div class="section-title">
-                <h2>Resume</h2>
+                    <h2>Resume</h2>
                 </div>
-    
-                <div class="row">
-                    <h3 class="resume-title">Sumary</h3>
-                    <div class="resume-item pb-0">
-                    <h4>Kopano El Nkitseng Matlala</h4>
-                    <p><em>I am an innovative and deadline-driven Graphic Designer with over 3 years of experience in designing and developing user-centered digital/print marketing materials, from the initial concept to final polished deliverables.</em></p>
-                    <ul>
-                        <li>Hekpoort, Mogale City</li>
-                        <li>(+27) 0721646797</li>
-                        <li>kopanoel@gmail.com</li>
-                    </ul>
-                    </div>
-    
-                    <h3 class="resume-title">Education</h3>
-                    <div class="resume-item">
-                    <h4>Hyperion Certificate &amp; Software Engineering</h4>
-                    <h5>2022 - 2023</h5>
-                    <p><em>Hyperion Dev, Rosebank onsite</em></p>
-                    <p>Course mainly consited of python SQL and Django framework for 3 months</p>
-                    </div>
-                    <div class="resume-item">
-                    <h4>N5 Mechanical Draughting &amp; Mechanical and Civil Draughting</h4>
-                    <h5>2012 - 2014</h5>
-                    <p><em>Westcol Krugersdorp-west campus</em></p>
-                    <p>My course consisted of mechanical CAD Draughting in caddy and Civil Draughting and it ended at N5</p>
-                    </div>
+                <div class="row" id="summary">
+                    <!-- Summary will be dynamically added here -->
                 </div>
-
+                <h3 class="resume-title">Education</h3>
+                <div class="resume-item" id="education">
+                    <!-- Education details will be dynamically added here -->
+                </div>
                 <div>
                     <h3 class="resume-title">Professional Experience</h3>
-                    <div class="resume-item">
-                    <h4>Entrepreneur</h4>
-                    <h5>2009 - Present</h5>
-                    <p><em>Blue Eland (pty) ltd - Gauteng</em></p>
-                    <ul>
-                        <li>I started by selling sweets, Then started importing womens clothing from China through my Aunt who was CEO or Brand Africa "Tebogo Lefifi".  </li>
-                        <li>The business transformed into consulting and training establishment.</li>
-                        <li>I created all the digital content, marketing content and personally sold everything myself.</li>
-                        <li>and now it will hopefully spill over into the tech-world as i build soloutions as a hobby</li>
-                    </ul>
-                    </div>
-                    <div class="resume-item">
-                    <h4>Quality Assurer</h4>
-                    <h5>2018</h5>
-                    <p><em>Department Of higher Education - South Africa</em></p>
-                    <ul>
-                        <li>I was part of a marking center at Tswane south collage, ensuring that all pappers are valid and none are compromised or illigally placed.</li>
-                        <li>Upon checking all submissions match the database, we waited for the markers and checked that they tallied all the marks properly and no erroers were made.</li>
-                    </ul>
+                    <div class="resume-item" id="experience">
+                        <!-- Professional experience details will be dynamically added here -->
                     </div>
                 </div>
-    
             </div>
-            </section>  
         </section>
-
-        <section id="contact">
-            <h1>Contact Us</h1>
-            <div class="contact-info">
-                <p>kopanoel.com</p>
-                <p>Phone: +27 72-164-6797</p>
-                <p>Address: Gauteng, South Sfrica</p>
-            </div>
-            <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.744264753927!2d28.0436316149545!3d-26.26979848338423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950d9e066ef84d%3A0xf6b7f97e716b720!2sGauteng%2C%20South%20Africa!5e0!3m2!1sen!2s!4v1649249177920!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         
-        </section>    
-    
-    </div>
+        
+
+        <section id="contact-form">
+            
+            <h2>Contact Us</h2>
+            <form action="https://formspree.io/f/xnqellop" id="contact-form"  method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="request">Request:</label>
+                    <textarea id="request" name="request" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            
+        </section>
+           
+    </div>  
+
+    <!-- Include your script just before closing the body tag -->
     <script src="./main.js"></script>
 </body>
 </html>
